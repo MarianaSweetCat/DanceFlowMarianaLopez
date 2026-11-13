@@ -1,15 +1,8 @@
 ﻿// Mariana Alejandra López Rodríguez 2026-0911
-// DANCEFLOW - DANCE CLASS MANAGEMENT SYSTEM
-// TAREA 3 - OBJECT-ORIENTED PROGRAMMING (OOP)
-try
-{
-    DanceFlowApp app = new DanceFlowApp();
-    app.Run();
-}
-catch (Exception error)
-{
-    Console.WriteLine("An unexpected error occurred: " + error.Message);
-}
+// DANCE CLASS MANAGEMENT SYSTEM TAREA 3
+
+DanceFlowApp app = new DanceFlowApp();
+app.Run();
 
 // STUDENT CLASS
 class Student
@@ -80,40 +73,49 @@ class DanceFlowApp
 
         while (running)
         {
-            Console.Clear();
-
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine("       DANCEFLOW SYSTEM");
-            Console.WriteLine("----------------------------------");
-            Console.WriteLine("1. Students");
-            Console.WriteLine("2. Dance Classes");
-            Console.WriteLine("3. Inscriptions");
-            Console.WriteLine("4. Exit");
-            Console.WriteLine("----------------------------------");
-
-            int option = ReadNumber("Choose an option: ", 1, 4);
-
-            switch (option)
+            try
             {
-                case 1:
-                    StudentsMenu();
-                    break;
+                Console.Clear();
 
-                case 2:
-                    ClassesMenu();
-                    break;
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("       DANCEFLOW SYSTEM");
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine("1. Students");
+                Console.WriteLine("2. Dance Classes");
+                Console.WriteLine("3. Inscriptions");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("----------------------------------");
 
-                case 3:
-                    InscriptionsMenu();
-                    break;
+                int option = ReadNumber("Choose an option: ", 1, 4);
 
-                case 4:
-                    running = false;
-                    Console.WriteLine("\nThank you for using DanceFlow!");
-                    break;
+                switch (option)
+                {
+                    case 1:
+                        StudentsMenu();
+                        break;
+
+                    case 2:
+                        ClassesMenu();
+                        break;
+
+                    case 3:
+                        InscriptionsMenu();
+                        break;
+
+                    case 4:
+                        running = false;
+                        Console.WriteLine("\nThank you for using DanceFlow!");
+                        break;
+                }
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine("\nAn error occurred: " + error.Message);
+                Pause();
             }
         }
     }
+
 
     // INPUT VALIDATION METHODS
     private string ReadText(string message)
