@@ -314,7 +314,7 @@ class DanceFlowApp
         Console.WriteLine("\n---------- ADD STUDENT ----------");
 
         string name = ReadText("Enter student name: ");
-        int age = ReadNumber("Enter age: ", 1, 100);
+        int age = ReadNumber("Enter age: ", 3, 100);
         string phone = ReadPhone();
         string email = ReadEmail();
 
@@ -399,7 +399,7 @@ class DanceFlowApp
         Console.WriteLine("\nEnter the new information:");
 
         student.Name = ReadText("Enter new name: ");
-        student.Age = ReadNumber("Enter new age: ", 1, 100);
+        student.Age = ReadNumber("Enter new age: ", 3, 100);
         student.Phone = ReadPhone();
         student.Email = ReadEmail(student);
 
