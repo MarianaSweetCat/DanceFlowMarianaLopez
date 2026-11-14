@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37628.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlInscripcionesTask4", "ControlInscripcionesTask4.csproj", "{DEBBDEE1-D202-49F8-A0C4-8DD8ACE9318E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEBBDEE1-D202-49F8-A0C4-8DD8ACE9318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBBDEE1-D202-49F8-A0C4-8DD8ACE9318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBBDEE1-D202-49F8-A0C4-8DD8ACE9318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBBDEE1-D202-49F8-A0C4-8DD8ACE9318E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D89FDF1-C240-4F40-BA34-0D441B74D5AB}
+	EndGlobalSection
+EndGlobal
